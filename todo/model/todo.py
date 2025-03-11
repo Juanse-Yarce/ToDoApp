@@ -16,3 +16,8 @@ class Todo:
     def __str__(self):
         print(f"{self.code_id}-{self.title}")
 
+class TodoBook:
+
+    def __init__(self):
+        self.todos: dict[int, Todo] = {}
+

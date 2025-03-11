@@ -26,3 +26,5 @@ class TodoBook:
         objeto_clase_Todo = Todo(title, description)
         self.todos[generar_id] = objeto_clase_Todo
 
+    def pending_todos(self) -> list[Todo]:
+        completados_falsos = [Todo.completed  for Todo in list(self.todos.values())]
